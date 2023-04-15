@@ -3,14 +3,8 @@ import styled from 'styled-components';
 export const CardMovies = styled.div`
 width: 190px;
 margin: 10px;
-height: 310px;
+height: 260px;
 border-radius:6px 5px;
-border: 1px solid rgba(225, 225, 225, 980);
-box-shadow:  2px 2px 2px rgba(245, 245 ,245, 989);
-&:hover{
-  transition: 100ms;
-   box-shadow: 2px 3px 4px rgba(225, 225 ,225, 989);
-}
      img{
          object-fit:cover;
          width: 190px;
@@ -18,25 +12,25 @@ box-shadow:  2px 2px 2px rgba(245, 245 ,245, 989);
          border-radius: 6px;
      }
      h2{
+      color:  rgba(240, 240, 240, 0.9);
       margin-left: 10px;
-      margin-top: 10px;
       margin-bottom: 10px;
-      font-weight:bold;
-      font-size: 1rem;
+      font-size: 0.9rem;
      }
      p{
-      font-size: 0.9rem;
+      font-size: 0.7rem;
       margin-left: 10px;
+      color:  #fff;
      }
 `;
 export const ContainerMovies = styled.div`
-  width: 50vw;
+  width: 100vw;
   display: flex;
-
   flex-wrap: wrap;
+  margin-left: 80px;
   a{
     text-decoration: none;
-    color: black;
+    color:  #060d17;
     display: block;
   }
 `;

@@ -12,10 +12,9 @@ export const DetailsPerson = () => {
   const [ movieLanguage, setMovieLanguage ] = useState(false);
 
   const imageUrl = 'https://image.tmdb.org/t/p/w500/';
-
   const { id } = useParams();
   useEffect(() => {
-    axios.get(`https://api.themoviedb.org/3/person/${id}?api_key=${apiKey}&language=en-US&page=1`)
+    axios.get(`https://api.themoviedb.org/3/person/${id}?api_key=${apiKey}&language=en-US&page=4`)
       .then(response => setPersonId(response.data))
       .catch(err => err);
   }, [ id ]);
@@ -34,6 +33,7 @@ export const DetailsPerson = () => {
         <Link to='#' onClick={handleClickOpenMovieLanguage}>see name in another language</Link>
         <p>{personId.biography}</p>
         <b>Local nascimento: {personId.place_of_birth}</b>
+        <b>depatarmento: {personId.known_for_department}</b>
         {movieLanguage && <ModalLanguage data={personId.also_known_as}/>}
       </Overview>
     </MainContainer>

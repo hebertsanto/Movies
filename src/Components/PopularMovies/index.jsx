@@ -8,8 +8,10 @@ import { Link } from 'react-router-dom';
 export const PopularMovies = () => {
   const [ popularMovie, setPopularMovie ] = useState([]);
   const imageUrl = 'https://image.tmdb.org/t/p/w500/';
+  const page = 4;
+
   useEffect(() => {
-    axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=4`)
+    axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=${page}`)
       .then(response => setPopularMovie(response.data.results))
       .catch(err =>  err);
   }, []);
@@ -25,6 +27,9 @@ export const PopularMovies = () => {
           </CardMovies>
         </Link>
       )}
+      <div>
+        <button >mostrar mais</button>
+      </div>
     </ContainerMovies>
   );
 };

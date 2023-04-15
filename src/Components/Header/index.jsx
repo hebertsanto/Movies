@@ -7,9 +7,12 @@ export const Header = () => {
   return(
     <HeaderStyle>
       <div>
-       
+        
       </div>
       <Navigation />
+      <div>
+        <input type="search" placeholder='pesquise por filmes'/>
+      </div>
     </HeaderStyle>
   );
 };

@@ -1,19 +1,30 @@
 import styled from 'styled-components';
 
 export const HeaderStyle = styled.header`
-    height: 7vh;
-    background-color:rgba(250, 250, 250, .98);
+    height: 8vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
     position: fixed;
     width: 100%;
-    box-shadow: 2px 2px 2px rgba(250, 250, 250, .98);
-    color: #000;
-    border-bottom: 1px solid rgba(240, 240, 240, 0.980);
-    backdrop-filter: blur('8px');
+    backdrop-filter: blur(18px);
+    background: #060d17d7;
+    color:#fff;
     div{
+        color: #fff;
         font-size:1.3rem;
+    }
+    div > input{
+        padding-left:10px;
+        outline: none;
+        color: #fff;
+        border: none;
+        background-color:#10161d;
+         width: 600px;
+         height: 40px;
+    }
+    div > h3{
+        color: #fff;
     }
     img{
        cursor: pointer;

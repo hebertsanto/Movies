@@ -10,11 +10,9 @@ export const NavStyle = styled.nav`
     li{
         list-style: none;
         a{
-            color: #000;
-            text-transform: uppercase;
+            color: #999c9f;
             text-decoration: none;
-            font-size: 0.81rem;
-            font-weight: bold;
+            font-size: 1rem;
             &:hover{
                 
             }
