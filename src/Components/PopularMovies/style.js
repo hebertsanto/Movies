@@ -3,12 +3,16 @@ import styled from 'styled-components';
 export const CardMovies = styled.div`
 width: 190px;
 margin: 10px;
-height: 260px;
+height: 330px;
 border-radius:6px 5px;
      img{
+      &:hover{
+        opacity: 0.8;
+        transition: 100ms;
+      }
          object-fit:cover;
          width: 190px;
-         height: 220px;
+         height: 260px;
          border-radius: 6px;
      }
      h2{

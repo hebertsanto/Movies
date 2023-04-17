@@ -13,6 +13,10 @@ export const ImageDetails = styled.img`
 
 export const Overview = styled.div`
   width: 60vw;
+  
+  p{
+    color: #fff;
+  }
 `;
 
 export const MainContainer = styled.div`

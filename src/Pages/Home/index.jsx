@@ -1,9 +1,13 @@
 import React from 'react';
+import { BestRating } from '../../Components/BestRating';
+import { HomeStyle } from './style';
+import { LatestMovies } from '../../Components/latestMovies';
 
 export const Home = () => {
   return(
-    <div style={{ paddingTop: '10vh' , minHeight:'100vh' }}>
-      <h1>home Page</h1>
-    </div>
+    <HomeStyle>
+      < BestRating/>
+      <LatestMovies />
+    </HomeStyle>
   );
 };

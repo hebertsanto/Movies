@@ -32,8 +32,8 @@ export const DetailsPerson = () => {
         <h3>{personId.name}</h3>
         <Link to='#' onClick={handleClickOpenMovieLanguage}>see name in another language</Link>
         <p>{personId.biography}</p>
-        <b>Local nascimento: {personId.place_of_birth}</b>
-        <b>depatarmento: {personId.known_for_department}</b>
+        <p>Local nascimento: {personId.place_of_birth}</p>
+        <p>depatarmento: {personId.known_for_department}</p>
         {movieLanguage && <ModalLanguage data={personId.also_known_as}/>}
       </Overview>
     </MainContainer>

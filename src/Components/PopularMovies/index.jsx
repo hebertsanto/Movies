@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 export const PopularMovies = () => {
   const [ popularMovie, setPopularMovie ] = useState([]);
   const imageUrl = 'https://image.tmdb.org/t/p/w500/';
-  const page = 4;
+  const page = 1;
 
   useEffect(() => {
     axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=${page}`)
