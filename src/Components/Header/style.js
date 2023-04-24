@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const HeaderStyle = styled.header`
-    height: 8vh;
+    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -9,25 +9,29 @@ export const HeaderStyle = styled.header`
     width: 100%;
     backdrop-filter: blur(18px);
     background: #060d17d7;
+    z-index: 1000;
+    border-bottom: 1px solid black;
     color:#fff;
-    div{
-        color: #fff;
-        font-size:1.3rem;
-    }
+
     div > input{
-        padding-left:10px;
+        padding-left:15px;
         outline: none;
         color: #fff;
         border: none;
         background-color:#10161d;
+        border-radius: 5px;
          width: 600px;
-         height: 40px;
+         height: 50px;
+         font-size:1rem;
     }
-    div > h3{
-        color: #fff;
+    div > a{
+        text-decoration: none;
+    }
+    div >a > h2{
+        color: gainsboro;
     }
     img{
-       cursor: pointer;
+        cursor: pointer;
         height: 50px;
         object-fit: cover;
         width: 100px;

@@ -10,11 +10,12 @@ export const NavStyle = styled.nav`
     li{
         list-style: none;
         a{
+          font-family: helvetica;
             color: #999c9f;
             text-decoration: none;
-            font-size: 1rem;
+            font-size: 1.2rem;
             &:hover{
-                
+              color : #fff;
             }
         }
     }

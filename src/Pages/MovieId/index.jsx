@@ -37,9 +37,9 @@ export const MovieId = () => {
               <p>{movieDatails.overview}</p>
               <WatchProviderMovie />
             </Overview>
+            <MoviesSimilar />
           </Details>
         </SubContainerDetails>
-        <MoviesSimilar />
       </SubContainer>
     </ContainerDetailsMovie>
   );

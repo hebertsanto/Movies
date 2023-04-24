@@ -27,9 +27,6 @@ export const PopularMovies = () => {
           </CardMovies>
         </Link>
       )}
-      <div>
-        <button >mostrar mais</button>
-      </div>
     </ContainerMovies>
   );
 };

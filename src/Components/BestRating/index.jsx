@@ -5,6 +5,7 @@ import { ContainerRating, SubContainer } from './style';
 import { Link } from 'react-router-dom';
 
 export const BestRating= () => {
+
   const [ rating, setRating ] = useState( [] );
   useEffect(() => {
     axios.get(`https://api.themoviedb.org/3/movie/top_rated?api_key=${apiKey}&language=en-US&page=1`)

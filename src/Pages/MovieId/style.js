@@ -8,22 +8,19 @@ export const ContainerDetailsMovie = styled.div`
 `;
 
 export const SubContainer = styled.div`
-  border-radius: 30px;
   padding: 40px;
-  width: 80vw;
+  width: 83vw;
   min-height: 100vh;
   background-color: rgb(6, 13, 23);
-  padding-top:15vh;
+  padding-top:12vh;
   margin: 0 auto;
 `;
 export const SubContainerDetails = styled.div`
    display: flex;
-
 `;
-
 export const Details = styled.div`
   padding: 20px;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-left: 30px;
   width: 50vw;
   height: 50vh;
@@ -37,7 +34,7 @@ export const Details = styled.div`
   }
 `;
 export const Overview = styled.div`
-margin-top: 10px;
+margin-top: 2px;
     h3{
       color:#b9bdcc;
     }
@@ -48,8 +45,7 @@ margin-top: 10px;
     }
 `;
 export const ImageInital = styled.img`
-     border-radius: 10px;
-     object-fit: cover;
-     width: 310px;
-     object-fit: cover;
+     height: 700px;
+     object-fit: contain;
+     border-radius: 3px;
 `;

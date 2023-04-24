@@ -9,6 +9,6 @@ export const ProviderItem = styled.div`
   img{
     margin: 5px;
     border-radius: 4px;
-    height: 50px;
+    height: 40px;
   }
 `;

@@ -1,29 +1,20 @@
 import styled from 'styled-components';
 
 export const CardMovies = styled.div`
-width: 190px;
+width: 300px;
 margin: 10px;
-height: 330px;
+height: 230px;
 border-radius:6px 5px;
      img{
-      &:hover{
-        opacity: 0.8;
-        transition: 100ms;
-      }
-         object-fit:cover;
-         width: 190px;
-         height: 260px;
-         border-radius: 6px;
+         width: 300px;
      }
      h2{
       color:  rgba(240, 240, 240, 0.9);
-      margin-left: 10px;
       margin-bottom: 10px;
-      font-size: 0.9rem;
+      font-size: 1rem;
      }
      p{
       font-size: 0.7rem;
-      margin-left: 10px;
       color:  #fff;
      }
 `;
@@ -32,6 +23,7 @@ export const ContainerMovies = styled.div`
   display: flex;
   flex-wrap: wrap;
   margin-left: 80px;
+  padding-top: 2vh;
   a{
     text-decoration: none;
     color:  #060d17;
