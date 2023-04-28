@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const ContainerRating = styled.div`
    padding-top: 10vh;
-    padding-left: 30px;
+    padding-left: 60px;
    color:rgb(131 133 135);
    width: 99vw;
   h1{
