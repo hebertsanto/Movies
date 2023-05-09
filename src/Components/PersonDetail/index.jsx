@@ -13,6 +13,7 @@ export const DetailsPerson = () => {
 
   const imageUrl = 'https://image.tmdb.org/t/p/w500/';
   const { id } = useParams();
+  
   useEffect(() => {
     axios.get(`https://api.themoviedb.org/3/person/${id}?api_key=${apiKey}&language=en-US&page=4`)
       .then(response => setPersonId(response.data))
@@ -22,6 +23,7 @@ export const DetailsPerson = () => {
   function handleClickOpenMovieLanguage(){
     setMovieLanguage(!movieLanguage);
   }
+  
   return (
     <MainContainer>
       <ContainerDetails>

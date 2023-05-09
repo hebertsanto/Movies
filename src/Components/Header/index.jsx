@@ -7,7 +7,7 @@ export const Header = () => {
   return(
     <HeaderStyle>
       <div>
-        <Link to='/'><h2>Films</h2></Link>
+        <Link to='/'><h2>movie</h2></Link>
       </div>
       <Navigation />
       <div>

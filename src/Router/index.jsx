@@ -7,7 +7,6 @@ import { MovieId } from '../Pages/MovieId';
 import { PeopleContainer } from '../Pages/Person';
 import { DetailsPerson } from '../Components/PersonDetail';
 import { Home } from '../Pages/Home';
-import { PopularTv } from '../Components/tvPopular';
 
 export const Router  = () => {
   return(
@@ -19,7 +18,6 @@ export const Router  = () => {
           <Route  path='/movie/:id' element={<MovieId />}/>
           <Route  path='/people' element={<PeopleContainer />}/>
           <Route  path='/people/:id' element={<DetailsPerson />}/>
-          <Route  path='/tv' element={<PopularTv />}/>
         </Route>
       </Routes>
       <Global />

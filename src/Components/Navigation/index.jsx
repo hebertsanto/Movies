@@ -8,7 +8,6 @@ export const Navigation = () => {
     <NavStyle>
       <li><LinkStyle to='/movie'>movies</LinkStyle></li>
       <li><LinkStyle to='/people'>people</LinkStyle></li>
-      <li><LinkStyle to='/tv'>tv</LinkStyle></li>
     </NavStyle>
   );
 };

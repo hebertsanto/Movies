@@ -5,6 +5,7 @@ import { Link, useParams } from 'react-router-dom';
 import { MoviesStyle } from './style';
 
 export const MoviesSimilar = () => {
+
   const { id } = useParams();
   const [ similar, setSimilarMovies ] = useState([]);
   const imageUrl = 'https://image.tmdb.org/t/p/w500/';
@@ -19,6 +20,7 @@ export const MoviesSimilar = () => {
   return(
     <div>
       <h1 style={{ color:'rgb(185, 189, 204)', margin:'18px 0px' }}>Você pode gostar </h1>
+      <button>next</button>
       <MoviesStyle>
         {similarLimeted?.map(item => 
           <Link  key={item.id} to={`/movie/${item.id}`}>

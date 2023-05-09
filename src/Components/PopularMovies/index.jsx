@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 
 
 export const PopularMovies = () => {
+  
   const [ popularMovie, setPopularMovie ] = useState([]);
   const imageUrl = 'https://image.tmdb.org/t/p/w500/';
   const page = 1;
